@@ -13,8 +13,8 @@ technologies = {
 	@1944 = 21
 	@1945 = 23
 	@1946 = 25
-		
-	ger_nsb_motorised_infantry = {
+			
+	axis_nsb_motorised_infantry = {
 
 		enable_subunits = {
 			motorized
@@ -25,57 +25,67 @@ technologies = {
 		enable_equipments = {
 			motorized_equipment_1
 		}
-			
+				
 		path = {
-			leads_to_tech = ger_nsb_mechanised_infantry
+			leads_to_tech = axis_nsb_mechanised_infantry
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -4 y = @1936 }
+		}	
+		on_research_complete = {
+			if = {
+				limit = { NOT = { tag = ITA } }
+				hidden_effect = {
+					load_oob = "unlock_motorized"
+				}			
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
 		}
-		
-		
 		categories = { all_armour
 			motorized_equipment
+			
 		}
 		
 		ai_will_do = {
-			factor = 7
+			factor = 10
 			
 		}
 	}
 	
-	ger_nsb_mechanised_infantry = {
+	axis_nsb_mechanised_infantry = {
 
 		enable_equipments = {
 			mechanized_equipment_1
 		}
 		enable_subunits = {
 			mechanized
-			logistics_company_mech
-		}
-		
-		path = {
-			leads_to_tech = ger_nsb_mechanised_infantry2
-			research_cost_coeff = 1
+			logistics_company_mech	
 		}
 
-		research_cost = 2.5
+		path = {
+			leads_to_tech = axis_nsb_mechanised_infantry2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.8
 		start_year = 1940
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -4 y = @1940 }
 		}
 		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_motorized"
-				load_oob = "unlock_tanks_mech"
+			if = {
+				limit = { NOT = { tag = ITA } }
+				hidden_effect = {
+					load_oob = "unlock_mech"
+				}			
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		categories = { all_armour
@@ -84,24 +94,28 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 	}
-	ger_nsb_mechanised_infantry2 = {
+	axis_nsb_mechanised_infantry2 = {
 
 		enable_equipments = {
 			mechanized_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = ger_nsb_mechanised_infantry3
+			leads_to_tech = axis_nsb_mechanised_infantry3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1943
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -4 y = @1943 }
 		}
 		
@@ -111,10 +125,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 	}
-	ger_nsb_mechanised_infantry3 = {
+	axis_nsb_mechanised_infantry3 = {
 
 		enable_equipments = {
 			mechanized_equipment_3
@@ -124,11 +142,12 @@ technologies = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 		}
+		
 
 		research_cost = 2
 		start_year = 1945
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -4 y = @1945 }
 		}
 		
@@ -138,12 +157,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 	}
 	
     # Armored cars
-	ger_nsb_tech_armored_cars = {
+	axis_nsb_tech_armored_cars = {
 
 		enable_subunits = {
 			recon_ac
@@ -154,14 +177,14 @@ technologies = {
 		
 		enable_equipments = { armored_cars_equipment_1}
 		path = {
-			leads_to_tech = ger_nsb_tech_armored_cars2
+			leads_to_tech = axis_nsb_tech_armored_cars2
 			research_cost_coeff = 1
 		}
         
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -2 y = @1934 }
 		}
 		
@@ -176,19 +199,18 @@ technologies = {
 		}
 	}
 	
-	ger_nsb_tech_armored_cars2 = {
+	axis_nsb_tech_armored_cars2 = {
 		
-		enable_equipments = { armored_cars_equipment_2}
-		
+		enable_equipments = { armored_cars_equipment_2 }
 		path = {
-			leads_to_tech = ger_nsb_tech_armored_cars3
+			leads_to_tech = axis_nsb_tech_armored_cars3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.2
 		start_year = 1936
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -2 y = @1936 }
 		}
 		
@@ -203,19 +225,19 @@ technologies = {
 		}
 	}
 	
-	ger_nsb_tech_armored_cars3 = {
-				
-		enable_equipments = { armored_cars_equipment_3}
+	axis_nsb_tech_armored_cars3 = {
+			
+		enable_equipments = { armored_cars_equipment_3 }
 		
 		path = {
-			leads_to_tech = ger_nsb_tech_armored_cars4
+			leads_to_tech = axis_nsb_tech_armored_cars4
 			research_cost_coeff = 1
 		}
         
 		research_cost = 1.2
 		start_year = 1938
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -2 y = @1938 }
 		}
 		
@@ -229,18 +251,18 @@ technologies = {
 			
 		}
 	}
-	ger_nsb_tech_armored_cars4 = {	
-		
-		enable_equipments = { armored_cars_equipment_4}
+	axis_nsb_tech_armored_cars4 = {
+			
+		enable_equipments = { armored_cars_equipment_4 }
 		path = {
-			leads_to_tech = ger_nsb_tech_armored_cars5
+			leads_to_tech = axis_nsb_tech_armored_cars5
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.2
 		start_year = 1941
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -2 y = @1941 }
 		}
 		
@@ -254,15 +276,15 @@ technologies = {
 			
 		}
 	}
-	ger_nsb_tech_armored_cars5 = {
+	axis_nsb_tech_armored_cars5 = {
 
 		
-		enable_equipments = { armored_cars_equipment_5}
+		enable_equipments = { armored_cars_equipment_5 }
 		
 		research_cost = 1.4
 		start_year = 1944
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = -2 y = @1944 }
 		}
 		
@@ -278,7 +300,7 @@ technologies = {
 	}
 	
 	############################# Light armor ############################
-	ger_light_tank_chassis_1934 = {
+	axis_light_tank_chassis_1934 = {
 		enable_equipment_modules = {
 			tank_torsion_bar_suspension
 			tank_riveted_armor
@@ -312,64 +334,83 @@ technologies = {
 			light_armor
 			light_armor_recon
 		}
+
 		enable_equipments = {
 			light_tank_chassis_1934 
-		}	
+		}
+		
 		path = {
-			leads_to_tech = ger_light_tank_chassis_1936
+			leads_to_tech = axis_light_tank_chassis_1936
 			research_cost_coeff = 1
 		}
+		
 		research_cost = 1.5
 		start_year = 1934
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 0 y = @1934 }
 		}
+       
 		ai_will_do = {
-			factor = 5
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 50
+			}
 			
-		}		
-		categories = {
-			all_armour
+		}
+		
+		categories = { all_armour
 			armor
 			cat_light_armor
 		}
 	}	
 	
-	ger_light_tank_chassis_1936 = { 
+	axis_light_tank_chassis_1936 = { 
+
 		enable_equipments = {
 			light_tank_chassis_1936 
 		}
+		
 		path = {
-			leads_to_tech = ger_light_tank_chassis_1938
+			leads_to_tech = axis_light_tank_chassis_1938
 			research_cost_coeff = 1
 		}
+		
 		research_cost = 1.5
 		start_year = 1936
+		
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 0 y = @1936 }
 		}
+		
 		ai_will_do = {
-			factor = 5
-		}		
-		categories = {
-			all_armour
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 50
+			}
+		}
+		
+		
+		categories = { all_armour
 			armor
 			cat_light_armor
 		}
 	}
 	
-	ger_light_tank_chassis_1938 = {
+	axis_light_tank_chassis_1938 = { 
+
 		enable_equipments = {
-			light_tank_chassis_1938
+			light_tank_chassis_1938 
 			light_tank_destroyer_chassis_1938
 			light_tank_artillery_chassis_1938
 			light_tank_aa_chassis_1938
 		}	
 		
 		path = {
-			leads_to_tech = ger_light_tank_chassis_1940
+			leads_to_tech = axis_light_tank_chassis_1940
 			research_cost_coeff = 1
 		}
 		dependencies = {
@@ -377,20 +418,37 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1938
+		on_research_complete = {
+			if = {
+				limit = { NOT = { tag = ITA } }
+				hidden_effect = {
+					load_oob = "unlock_tanks_light"
+				}		
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
+		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 0 y = @1938 }
 		}
+		
 		ai_will_do = {
-			factor = 5
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 50
+			}
+			
 		}
-		categories = {
-			all_armour
+		
+		categories = { all_armour
 			armor
 			cat_light_armor
 		}
 	}
-	ger_light_tank_chassis_1940 = {
+	
+	axis_light_tank_chassis_1940 = { 
+
 		enable_equipments = {
 			light_tank_chassis_1940
 			light_tank_destroyer_chassis_1940
@@ -401,25 +459,35 @@ technologies = {
 			advanced_machine_tools = 1
 		}
 		path = {
-			leads_to_tech = ger_light_tank_chassis_1942
+			leads_to_tech = axis_light_tank_chassis_1942
 			research_cost_coeff = 1
 		}
+		
 		research_cost = 1.5
 		start_year = 1940
+		
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 0 y = @1940 }
 		}
+	
 		ai_will_do = {
-			factor = 5
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 50
+			}
+	
 		}
-		categories = {
-			all_armour
+		
+		categories = { all_armour
 			armor
 			cat_light_armor
 		}
 	}
-	ger_light_tank_chassis_1942 = {
+
+	axis_light_tank_chassis_1942 = { 
+
 		enable_equipments = {
 			light_tank_chassis_1942
 			light_tank_destroyer_chassis_1942
@@ -429,371 +497,322 @@ technologies = {
 		dependencies = {
 			assembly_line_production = 1
 		}
-		path = {
-			leads_to_tech = ger_light_tank_chassis_1944
-			research_cost_coeff = 1
-		}
 		research_cost = 1.5
 		start_year = 1942
+		
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 0 y = @1942 }
 		}
+	
 		ai_will_do = {
-			factor = 5
-		}		
-		categories = {
-			all_armour
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 50
+			}
+			
+		}
+		
+		categories = { all_armour
 			armor
 			cat_light_armor
 		}
 	}
-	ger_light_tank_chassis_1944 = { 
+	
+	axis_medium_tank_chassis_1937 = {	
+
 		enable_equipments = {
-			light_tank_chassis_1944
-			light_tank_destroyer_chassis_1944
-			light_tank_artillery_chassis_1944
-			light_tank_aa_chassis_1944
-		}	
-		research_cost = 1.5
-		start_year = 1944
-		dependencies = {
-			modern_tools = 1
-		}
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 0 y = @1944 }
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		categories = {
-			all_armour
-			armor
-			cat_light_armor
-		}
-	}
-	ger_medium_tank_chassis_1936 = {	
-		enable_equipments = {
-			medium_tank_chassis_1936
+			medium_tank_chassis_1937
 		}
 		enable_subunits = {
 			medium_armor
 		}
+		
 		path = {
-			leads_to_tech = ger_medium_tank_chassis_1938
+			leads_to_tech = axis_medium_tank_chassis_1939
 			research_cost_coeff = 1
 		}
+		on_research_complete = {
+			if = {
+				limit = { NOT = { tag = ITA } }
+				hidden_effect = {
+					load_oob = "unlock_tanks_med"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}	
+		}
 		research_cost = 1.8
-		start_year = 1936
+		start_year = 1937
+
 		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 2 y = @1936 }
-		}
+			name = axis_nsb_armour_folder
+			position = { x = 2 y = @1937 }
+		}			
+			
 		ai_will_do = {
-			factor = 10	
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
+			
 		}
-		categories = {
-			all_armour
+		
+		categories = { all_armour
 			armor
 			cat_medium_armor
 		}
 	}
-	ger_medium_tank_chassis_1938 = { 
+
+	
+	axis_medium_tank_chassis_1939 = { 
+
 		enable_equipments = {
-			medium_tank_chassis_1938
-			medium_tank_destroyer_chassis_1938
-			medium_tank_artillery_chassis_1938
-			medium_tank_assault_gun_chassis_1938
-			medium_tank_aa_chassis_1938
+			medium_tank_chassis_1939 
+			medium_tank_destroyer_chassis_1939
+			medium_tank_artillery_chassis_1939
+			medium_tank_aa_chassis_1939
 		}
-		enable_subunits = {
-			medium_assault_gun_brigade
-			medium_assault_gun_company
-		}
+		
 		path = {
-			leads_to_tech = ger_medium_tank_chassis_1940
+			leads_to_tech = axis_medium_tank_chassis_1941 
 			research_cost_coeff = 1
 		}
 		dependencies = {
 			improved_machine_tools = 1
 		}
+		
 		research_cost = 1.8
-		start_year = 1938
+		start_year = 1939
+
 		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 2 y = @1938 }
+			name = axis_nsb_armour_folder
+			position = { x = 2 y = @1939 }
 		}
+	
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 			
 		}
-		categories = {
-			all_armour
+		
+		categories = { all_armour
 			armor
 			cat_medium_armor
 		}
 	}
 	
-	ger_medium_tank_chassis_1940 = { 
+	axis_nsb_medium_assault_gun_1939 = { 
+
 		enable_equipments = {
-			medium_tank_chassis_1940
-			medium_tank_destroyer_chassis_1940
-			medium_tank_artillery_chassis_1940
-			medium_tank_aa_chassis_1940
+			medium_assault_gun_equipment_1939
+		}
+		
+		enable_subunits = {
+			medium_assault_gun_brigade
+			medium_assault_gun_company
 		}
 		path = {
-			leads_to_tech = ger_medium_tank_chassis_1942
+			leads_to_tech = axis_nsb_medium_assault_gun_1941
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			improved_machine_tools = 1
+		}
+		research_cost = 1.6
+		start_year = 1938
+
+		folder = {
+			name = axis_nsb_armour_folder
+			position = { x = 4 y = @1938 }
+		}
+				
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = { all_armour
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	axis_medium_tank_chassis_1941 = { 
+
+		enable_equipments = {
+			medium_tank_chassis_1941 
+			medium_tank_destroyer_chassis_1941
+			medium_tank_artillery_chassis_1941
+			medium_tank_aa_chassis_1941
+		}
+		
+		path = {
+			leads_to_tech = axis_medium_tank_chassis_1943
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			advanced_machine_tools = 1
+		}	
+		
+		research_cost = 1.8
+		start_year = 1941
+		
+		folder = {
+			name = axis_nsb_armour_folder
+			position = { x = 2 y = @1941 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
+			
+		}
+		
+		categories = { all_armour
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	axis_nsb_medium_assault_gun_1941 = { 
+
+		enable_equipments = {
+			medium_assault_gun_equipment_1941
+		}
+			
+		path = {
+			leads_to_tech = axis_nsb_medium_assault_gun_1943
 			research_cost_coeff = 1
 		}	
 		dependencies = {
 			advanced_machine_tools = 1
 		}
-		research_cost = 1.8
+		research_cost = 1.6
 		start_year = 1940
+
 		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 2 y = @1940 }
+			name = axis_nsb_armour_folder
+			position = { x = 4 y = @1940 }
 		}
+				
 		ai_will_do = {
-			factor = 10	
+			factor = 0
 		}
-		categories = {
-			all_armour
+		
+		categories = { all_armour
 			armor
 			cat_medium_armor
 		}
 	}
 	
-	ger_medium_tank_chassis_1942 = {
-		enable_equipments = {
-			medium_tank_chassis_1942
-			medium_tank_destroyer_chassis_1942
-			medium_tank_artillery_chassis_1942
-			medium_tank_aa_chassis_1942
-		}
-		path = {
-			leads_to_tech = ger_medium_tank_chassis_1943
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = ger_medium_tank_chassis_1944
-			research_cost_coeff = 1
-		}
-		dependencies = {
-			assembly_line_production = 1
-		}
-		research_cost = 1.8
-		start_year = 1942
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 2 y = @1942 }
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		categories = {
-			all_armour
-			armor
-			cat_medium_armor
-		}
-	}
-	ger_medium_tank_chassis_1944 = {
-		enable_equipments = {
-			panzer_tank_chassis_1944
-			medium_tank_destroyer_chassis_1944
-			medium_tank_artillery_chassis_1944
-			medium_tank_aa_chassis_1944
-		}	
-		dependencies = {
-			modern_tools = 1
-		}
-		research_cost = 1.8
-		start_year = 1944
-		on_research_complete = {
-			custom_effect_tooltip = panzer_4_tt
-		}
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 2 y = @1944 }
-		}
-		ai_will_do = {
-			factor = 8
-		}
-		categories = {
-			all_armour
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	ger_medium_tank_chassis_1943 = { #PANTHER
+	axis_medium_tank_chassis_1943 = { 
+
 		enable_equipments = {
 			medium_tank_chassis_1943
 			medium_tank_destroyer_chassis_1943
 			medium_tank_artillery_chassis_1943
 			medium_tank_aa_chassis_1943
-		}	
-		path = {
-			leads_to_tech = ger_medium_tank_chassis_1945
-			research_cost_coeff = 1
 		}
-		research_cost = 1.8
-		start_year = 1943
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 4 y = @1943 }
+		
+		path = {
+			leads_to_tech = axis_medium_tank_chassis_1945
+			research_cost_coeff = 1
 		}
 		dependencies = {
 			assembly_line_production = 1
 		}
-		ai_will_do = {
-			factor = 12
-		}
-		categories = {
-			all_armour
-			armor
-			cat_medium_armor
-		}
-	}
-	ger_medium_tank_chassis_1945 = { 
-		enable_equipments = {
-			medium_tank_chassis_1945 
-		}
-		research_cost = 2
-		start_year = 1945
+		research_cost = 1.8
+		start_year = 1943
+		
 		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 4 y = @1945 }
+			name = axis_nsb_armour_folder
+			position = { x = 2 y = @1943 }
 		}
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		ai_will_do = {
-			factor = 15
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
-		categories = {
-			all_armour
+		
+		categories = { all_armour
 			armor
 			cat_medium_armor
 		}
 	}
 	
-	ger_heavy_tank_chassis_1934 = { 
+	axis_nsb_medium_assault_gun_1943 = { 
+
 		enable_equipments = {
-			heavy_tank_chassis_1934 
-		}
-		enable_subunits = {
-			heavy_armor
-		}
-		path = {
-			leads_to_tech = ger_heavy_tank_chassis_1942
-			research_cost_coeff = 1
-		}
-		research_cost = 2
-		start_year = 1934
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 8 y = @1934 }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		categories = {
-			all_armour
-			armor
-			cat_heavy_armor
-		}
-	}
-	ger_heavy_tank_chassis_1942 = {
-		enable_equipments = {
-			heavy_tank_chassis_1942
-			heavy_tank_destroyer_chassis_1942
-			heavy_tank_artillery_chassis_1942
-		}
-		path = {
-			leads_to_tech = ger_heavy_tank_chassis_1944
-			research_cost_coeff = 1
+			medium_assault_gun_equipment_1943
 		}
 		dependencies = {
 			assembly_line_production = 1
 		}
-		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_tanks_heavy"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-		research_cost = 2.2
-		start_year = 1942
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 8 y = @1942 }
-		}
-		ai_will_do = {
-			factor = 15
-		}
-		categories = {
-			all_armour
-			armor
-			cat_heavy_armor
-		}
-	}
-	ger_heavy_tank_chassis_1944 = { 
-		enable_equipments = {
-			heavy_tank_chassis_1944
-			heavy_tank_destroyer_chassis_1944
-			heavy_tank_artillery_chassis_1944
-		}
-		dependencies = {
-			modern_tools = 1
-		}
-		research_cost = 2.2
-		start_year = 1944
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 8 y = @1944 }
-		}
-		ai_will_do = {
-			factor = 15
-		}
-		categories = {
-			all_armour
-			armor
-			cat_heavy_armor
-		}
-	}
-	ger_nsb_heavy_assault_gun_1945 = { #sturmtiger
-
-		enable_equipments = {
-			heavy_assault_gun_equipment_1944
-		}
-		enable_subunits = {
-			heavy_assaut_gun_brigade
-			heavy_assaut_gun_company
-		}
 		research_cost = 1.6
-		start_year = 1944
-		dependencies = {
-			modern_tools = 1
+		start_year = 1942
+
+		folder = {
+			name = axis_nsb_armour_folder
+			position = { x = 4 y = @1942 }
 		}
+				
 		ai_will_do = {
 			factor = 0
 		}
-		folder = {
-			name = ger_nsb_armour_folder
-			position = { x = 6 y = @1944 }
-		}
+		
 		categories = { all_armour
 			armor
-			cat_heavy_armor
+			cat_medium_armor
 		}
 	}
-	ger_engine_tech_1 = {
+	
+	axis_medium_tank_chassis_1945 = { 
+
+		enable_equipments = {
+			medium_tank_chassis_1945 
+		}	
+		dependencies = {
+			modern_tools = 1
+		}
+		research_cost = 2
+		start_year = 1945
+		
+		folder = {
+			name = axis_nsb_armour_folder
+			position = { x = 2 y = @1945 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
+			
+		}
+		
+		categories = { all_armour
+			armor
+			cat_medium_armor
+		}
+	}
+	#engines/trucks
+	
+	axis_engine_tech_1 = {
 
 
 		path = {
-			leads_to_tech = ger_engine_tech_2
+			leads_to_tech = axis_engine_tech_2
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
@@ -803,7 +822,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1934 }
 		}
 
@@ -841,11 +860,11 @@ technologies = {
 		}
 	}
 
-	ger_engine_tech_2 = {
+	axis_engine_tech_2 = {
 
 
 		path = {
-			leads_to_tech = ger_engine_tech_3
+			leads_to_tech = axis_engine_tech_3
 			research_cost_coeff = 1
 		}
 
@@ -860,7 +879,7 @@ technologies = {
 			advanced_machine_tools = 1
 		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1940 }
 		}
 
@@ -898,11 +917,11 @@ technologies = {
 		}
 	}
 
-	ger_engine_tech_3 = {
+	axis_engine_tech_3 = {
 
 
 		path = {
-			leads_to_tech = ger_engine_tech_4
+			leads_to_tech = axis_engine_tech_4
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
@@ -915,7 +934,7 @@ technologies = {
 			assembly_line_production = 1
 		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1942 }
 		}
 
@@ -953,7 +972,7 @@ technologies = {
 		}
 	}
 
-	ger_engine_tech_4 = {
+	axis_engine_tech_4 = {
 
 		research_cost = 1.6
 		start_year = 1944
@@ -961,7 +980,7 @@ technologies = {
 			modern_tools = 1
 		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1944 }
 		}
 		on_research_complete = {
@@ -1001,13 +1020,13 @@ technologies = {
 			tank_upgrade
 		}
 	}
-	ger_armor_tech_1 = {
+	axis_armor_tech_1 = {
 		enable_equipment_modules = {
 			tank_welded_armor
 		}
 
 		path = {
-			leads_to_tech = ger_armor_tech_2
+			leads_to_tech = axis_armor_tech_2
 			research_cost_coeff = 1
 		}
 
@@ -1019,7 +1038,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1934 }
 		}
 
@@ -1057,13 +1076,13 @@ technologies = {
 		}
 	}
 
-	ger_armor_tech_2 = {
+	axis_armor_tech_2 = {
 
 		enable_equipment_modules = {
 			armor_skirts
 		}
 		path = {
-			leads_to_tech = ger_armor_tech_3
+			leads_to_tech = axis_armor_tech_3
 			research_cost_coeff = 1
 		}
 
@@ -1078,7 +1097,7 @@ technologies = {
 			advanced_machine_tools = 1
 		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1940 }
 		}
 
@@ -1116,11 +1135,11 @@ technologies = {
 		}
 	}
 
-	ger_armor_tech_3 = {
+	axis_armor_tech_3 = {
 
 
 		path = {
-			leads_to_tech = ger_armor_tech_4
+			leads_to_tech = axis_armor_tech_4
 			research_cost_coeff = 1
 		}
 
@@ -1135,7 +1154,7 @@ technologies = {
 			assembly_line_production = 1
 		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1942 }
 		}
 
@@ -1173,7 +1192,7 @@ technologies = {
 		}
 	}
 
-	ger_armor_tech_4 = {
+	axis_armor_tech_4 = {
 
 		research_cost = 1.6
 		start_year = 1944
@@ -1181,7 +1200,7 @@ technologies = {
 			modern_tools = 1
 		}
 		folder = {
-			name = ger_nsb_armour_folder
+			name = axis_nsb_armour_folder
 			position = { x = 11 y = @1944 }
 		}
 

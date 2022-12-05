@@ -68,30 +68,55 @@ guiTypes = {
 
 			}
 
-			################# MODULE SLOT: Special #################
+			################# MODULE SLOT: Interior #################
 			containerWindowType = {
-				name = "special_type_slot_1"
+				name = "interior_slot"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 
 				#### MODULE: Todo ####
 			}
+			
+			################# MODULE SLOT: Hull #################
 			containerWindowType = {
-				name = "special_type_slot_2"
+				name = "hull_slot_1"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 
 				#### MODULE: Todo ####
 			}
+			
+			################# MODULE SLOT: Turret #################
 			containerWindowType = {
-				name = "special_type_slot_3"
+				name = "turret_slot_1"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 
 				#### MODULE: Todo ####
 			}
+			
+			################# MODULE SLOT: Optic #################
 			containerWindowType = {
-				name = "special_type_slot_4"
+				name = "optic_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Todo ####
+			}
+			
+			################# MODULE SLOT: Radio #################
+
+			containerWindowType = {
+				name = "radio_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Todo ####
+			}
+			
+			################# MODULE SLOT: Armor Layout #################
+			containerWindowType = {
+				name = "armor_layout_type_slot"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 

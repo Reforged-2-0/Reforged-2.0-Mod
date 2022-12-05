@@ -233,31 +233,6 @@ guiTypes = {
 						position = { x=193 y=0 }
 					}
 				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint"
-						spriteType = "GFX_SM_super_heavy_hull_fixed_secondaries"
-						position = { x=193 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint_highlight"
-						spriteType = "GFX_SM_super_heavy_hull_fixed_secondaries@highlight"
-						position = { x=193 y=0 }
-					}
-				}
-
 			}
 
 			################# MODULE SLOT: Armor #################
@@ -508,29 +483,6 @@ guiTypes = {
 						position = { x=220 y=0 }
 					}
 				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries"
-						position = { x=220 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries@highlight"
-						position = { x=220 y=0 }
-					}
-				}
 			}
 
 			################# MODULE SLOT: Custom, Middle #2 #################
@@ -564,28 +516,6 @@ guiTypes = {
 					}
 				}
 				
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries"
-						position = { x=197 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries@highlight"
-						position = { x=197 y=0 }
-					}
-				}
 
 				#### MODULE: Anti-Air ####
 				containerWindowType = {
@@ -644,29 +574,6 @@ guiTypes = {
 					}
 				}
 
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries"
-						position = { x=184 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries@highlight"
-						position = { x=184 y=0 }
-					}
-				}
-
 				#### MODULE: Anti-Air ####
 				containerWindowType = {
 					name = "ship_anti_air"
@@ -715,29 +622,6 @@ guiTypes = {
 				}
 				containerWindowType = {
 					name = "ship_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_super_heavy_hull_rear1_secondaries@highlight"
-						position = { x=142 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_super_heavy_hull_rear1_secondaries"
-						position = { x=142 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
@@ -843,29 +727,6 @@ guiTypes = {
 				}
 				containerWindowType = {
 					name = "ship_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries@highlight"
-						position = { x=70 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_super_heavy_hull_mid_secondaries"
-						position = { x=70 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					

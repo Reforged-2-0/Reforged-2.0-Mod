@@ -121,6 +121,60 @@ equipment_modules = {
 		}
 	}
 
+	###Armor Layout Types
+	
+	tank_sloped_armor = {
+		abbreviation = "ang"
+		category = tank_armor_layout_type
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			#soft_attack = 1 # that's when rivets shoot back because they got dislodged by the shock. That was in fact the first reactive armor.
+			
+			defense = 2
+			breakthrough = 2
+		}
+		xp_cost = 8
+		multiply_stats = {
+			build_cost_ic = -0.2
+			armor_value = -0.2
+
+		}
+	}
+
+	tank_rigid_armor = {
+		abbreviation = "box"
+		category = tank_armor_layout_type
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 4
+			breakthrough = 4
+		}
+		xp_cost = 8
+		multiply_stats = {
+			build_cost_ic = 0.2
+			armor_value = 0.5
+
+		}
+	}
+
+	tank_no_armor = {
+		abbreviation = "car"
+		category = tank_armor_layout_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+		add_stats = {
+			defense = 2
+			breakthrough = 2
+		}
+
+		multiply_stats = {
+			armor_value = 0.4
+
+		}
+	}
+	
 	###Suspension Types
 
 	tank_torsion_bar_suspension = {
@@ -254,9 +308,56 @@ equipment_modules = {
 		}
 
 	}
+	
+	tank_light_open_tank_turret = {
+		abbreviation = "lot"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			maximum_speed = -0.25
+			breakthrough = 14
+		}
+		xp_cost = 2
+		multiply_stats = {
+			
+		}
+
+	}
 
 	tank_light_fixed_superstructure_turret = {
 		abbreviation = "lfs"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_medium_main_armament = armor
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 0.75
+			reliability = 0.2
+			defense = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.25
+		}
+
+	}
+	
+	tank_light_open_superstructure_turret = {
+		abbreviation = "los"
 		category = tank_light_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
@@ -334,6 +435,23 @@ equipment_modules = {
 		}
 
 	}
+	
+	tank_medium_open_tank_turret = {
+		abbreviation = "mot"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 3
+			maximum_speed = -0.25
+			breakthrough = 20
+		}
+		xp_cost = 2
+		multiply_stats = {
+	
+		}
+
+	}
 
 	tank_medium_fixed_superstructure_turret = {
 		abbreviation = "mfs"
@@ -363,7 +481,58 @@ equipment_modules = {
 		}
 
 	}
+	
+	tank_medium_open_superstructure_turret = {
+		abbreviation = "mos"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
 
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_heavy_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2.5
+			reliability = 0.2
+			defense = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.25
+		}
+
+	}
+
+	tank_heavy_one_man_tank_turret = {
+		abbreviation = "h1m"
+		category = tank_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_heavy_main_armament
+			}
+		}
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 5
+			breakthrough = 18
+		}
+
+		multiply_stats = {
+			
+		}
+
+	}
+	
 	tank_heavy_two_man_tank_turret = {
 		abbreviation = "h2m"
 		category = tank_heavy_turret_type
@@ -409,8 +578,59 @@ equipment_modules = {
 
 	}
 
+	tank_heavy_open_tank_turret = {
+		abbreviation = "hot"
+		category = tank_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_heavy_main_armament
+			}
+		}
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 5.5
+			maximum_speed = -0.25
+			breakthrough = 22
+		}
+
+		multiply_stats = {
+			
+		}
+
+	}
+	
 	tank_heavy_fixed_superstructure_turret = {
 		abbreviation = "hfs"
+		category = tank_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_super_heavy_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_super_heavy_main_armament = armor
+		}
+
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 5
+			reliability = 0.2
+			defense = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.25
+		}
+
+	}
+	
+	tank_heavy_open_superstructure_turret = {
+		abbreviation = "hos"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
@@ -1008,6 +1228,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
+		allow_equipment_type = rocket
 
 		add_stats = {
 			soft_attack = 50
@@ -1051,7 +1272,7 @@ equipment_modules = {
 	}
 
 
-	###Special Modules
+	###Radios
 
 
 	tank_radio_1 = {
@@ -1064,8 +1285,8 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			defense = 0.25
-			breakthrough = 0.25
+			defense = 0.15
+			breakthrough = 0.15
 		}
 	}
 
@@ -1080,8 +1301,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			defense = 0.45
-			breakthrough = 0.45
+			defense = 0.30
+			breakthrough = 0.30
 		}
 	}
 
@@ -1096,11 +1317,13 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			defense = 0.65
-			breakthrough = 0.65
+			defense = 0.45
+			breakthrough = 0.45
 		}
 	}
 
+	###Special Modules
+	
 	amphibious_drive = {
 		abbreviation = "amph"
 		category = tank_special_module
@@ -1121,7 +1344,69 @@ equipment_modules = {
 			build_cost_ic = 0.1
 		}
 	}
+	
+	stabilizer = {
+		abbreviation = "stab"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
 
+		add_stats = {
+			build_cost_ic = 2
+			breakthrough = 5
+		}
+		xp_cost = 1
+
+	}
+	
+	squeezebore_adaptor = {
+		abbreviation = "sque"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			
+		}
+		xp_cost = 1
+		multiply_stats = {
+			ap_attack = 0.1
+		}
+
+		build_cost_resources = {
+			tungsten = 1
+		}
+	}
+	
+	dozer_blade = {
+		abbreviation = "dozer"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	auto_loader = {
+		abbreviation = "auto"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2.5
+			breakthrough = 4
+			defense = 4
+		}
+		xp_cost = 1
+		
+	}
+	
+	###Hull Modules
+	
 	secondary_turret_hmg = {
 		abbreviation = "thmg"
 		category = tank_secondary_turret
@@ -1136,6 +1421,22 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
+		}
+	}
+	
+	additional_machine_guns = {
+		abbreviation = "mg"
+		category = tank_hull_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 2
+			defense = 2
+			build_cost_ic = 0.5
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
 		}
 	}
 
@@ -1157,10 +1458,55 @@ equipment_modules = {
 			armor_value  = -0.05
 		}
 	}
+	
+	wet_ammo_storage = {
+		abbreviation = "wet"
+		category = tank_hull_module
+		sfx = sfx_ui_sd_module_turret
 
-	sloped_armor = {
-		abbreviation = "slop"
-		category = tank_special_module
+		add_stats = {
+			reliability = 0.15
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	easy_maintenance = {
+		abbreviation = "easy"
+		category = tank_hull_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 10
+		multiply_stats = {
+			
+		}
+	}
+	
+	###Interior Modules
+	
+	big_interior = {
+		abbreviation = "spac"
+		category = tank_interior_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+		}
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.2
+			build_cost_ic = 0.1
+		}
+	}
+	
+	small_interior = {
+		abbreviation = "cram"
+		category = tank_interior_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1172,22 +1518,11 @@ equipment_modules = {
 		}
 	}
 
-	stabilizer = {
-		abbreviation = "stab"
-		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 2
-			breakthrough = 5
-		}
-		xp_cost = 1
-
-	}
-
+	###Turret Modules
+	
 	smoke_launchers = {
 		abbreviation = "smok"
-		category = tank_special_module
+		category = tank_turret_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1201,9 +1536,9 @@ equipment_modules = {
 		}
 	}
 
-	extra_ammo_storage = {
-		abbreviation = "extra"
-		category = tank_special_module
+	extra_ammo_storage_turret = {
+		abbreviation = "extrat"
+		category = tank_turret_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1214,42 +1549,9 @@ equipment_modules = {
 		xp_cost = 1
 	}
 
-	wet_ammo_storage = {
-		abbreviation = "wet"
-		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			reliability = 0.15
-			build_cost_ic = 1
-		}
-		xp_cost = 1
-		multiply_stats = {
-			
-		}
-	}
-
-	squeezebore_adaptor = {
-		abbreviation = "sque"
-		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			
-		}
-		xp_cost = 1
-		multiply_stats = {
-			ap_attack = 0.1
-		}
-
-		build_cost_resources = {
-			tungsten = 1
-		}
-	}
-
-	armor_skirts = {
-		abbreviation = "skirt"
-		category = tank_special_module
+	armor_sheets = {
+		abbreviation = "sheet"
+		category = tank_turret_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1262,9 +1564,9 @@ equipment_modules = {
 			
 		}
 	}
-
-	dozer_blade = {
-		abbreviation = "dozer"
+	
+	track_links = {
+		abbreviation = "links"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 
@@ -1277,44 +1579,122 @@ equipment_modules = {
 			
 		}
 	}
-
-	auto_loader = {
-		abbreviation = "auto"
-		category = tank_special_module
+	
+	infantry = {
+		abbreviation = "meat"
+		category = tank_hull_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 2.5
-			breakthrough = 4
-			defense = 4
+			entrenchment = 2
+			build_cost_ic = 1
 		}
 		xp_cost = 1
-		
-	}
-
-	easy_maintenance = {
-		abbreviation = "easy"
-		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			reliability = 0.1
-		}
-		xp_cost = 10
 		multiply_stats = {
 			
 		}
 	}
-
-	additional_machine_guns = {
-		abbreviation = "mg"
-		category = tank_special_module
+	
+	pintle_mount = {
+		abbreviation = "aamg"
+		category = tank_turret_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 2
-			defense = 2
-			build_cost_ic = 0.5
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	cupola = {
+		abbreviation = "cupola"
+		category = tank_turret_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	periscope = {
+		abbreviation = "pscope"
+		category = tank_turret_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	###Optic Modules
+	
+	early_war_optics = {
+		abbreviation = "earop"
+		category = tank_optic_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	mid_war_optics = {
+		abbreviation = "avgop"
+		category = tank_optic_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	late_war_optics = {
+		abbreviation = "advop"
+		category = tank_optic_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+	
+	unity_scope = {
+		abbreviation = "unity"
+		category = tank_optic_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
 		}
 		xp_cost = 1
 		multiply_stats = {

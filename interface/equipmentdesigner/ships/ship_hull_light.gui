@@ -54,31 +54,6 @@ guiTypes = {
 						position = { x=360 y=0 }
 					}
 				}
-
-				containerWindowType = {
-					name = "dp_light_battery"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_light_battery"
-						position = { x=360 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "dp_light_battery@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_light_hull_light_battery@highlight"
-						position = { x=360 y=0 }
-					}
-				}
-
 			}
 
 			################# MODULE SLOT: Anti-Air #################
@@ -368,31 +343,6 @@ guiTypes = {
 						position = { x=385 y=0 }
 					}
 				}
-
-				#### MODULE: Light Battery ####
-				containerWindowType = {
-					name = "dp_light_battery"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_light_battery"
-						position = { x=385 y=0 }
-					}
-				}
-				
-				containerWindowType = {
-					name = "dp_light_battery@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_light_battery@highlight"
-						position = { x=385 y=0 }
-					}
-				}
 			}
 
 			################# MODULE SLOT: Custom, Middle #1 #################
@@ -538,30 +488,6 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "ship_light_battery@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_light_battery@highlight"
-						position = { x=170 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "dp_light_battery"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_light_battery"
-						position = { x=170 y=0 }
-					}
-				}
-				
-				containerWindowType = {
-					name = "dp_light_battery@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
@@ -724,30 +650,6 @@ guiTypes = {
 					}
 				}
 
-				containerWindowType = {
-					name = "dp_light_battery"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_rear_1_light_battery"
-						position = { x=110 y=0 }
-					}
-				}
-				
-				containerWindowType = {
-					name = "dp_light_battery@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_rear_1_light_battery@highlight"
-						position = { x=110 y=0 }
-					}
-				}
-
 			}
 
 			################# MODULE SLOT: Custom, Rear #1 #################
@@ -890,29 +792,6 @@ guiTypes = {
 				}
 				containerWindowType = {
 					name = "ship_light_battery@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_rear_1_light_battery@highlight"
-						position = { x=91 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "dp_light_battery"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_light_hull_rear_1_light_battery"
-						position = { x=91 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "dp_light_battery@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					

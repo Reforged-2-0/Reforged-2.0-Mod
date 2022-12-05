@@ -253,30 +253,6 @@ guiTypes = {
 						position = { x=400 y=0 }
 					}
 				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint"
-						spriteType = "GFX_SM_carrier_hull_fixed_secondaries"
-						position = { x=400 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_carrier_hull_fixed_secondaries@highlight"
-						position = { x=400 y=0 }
-					}
-				}
 			}
 			
 			################# MODULE SLOT: Deck Space slot 1 #################
@@ -494,30 +470,6 @@ guiTypes = {
 					}
 
 				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_carrier_hull_front1_secondaries"
-						position = { x=417 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_carrier_hull_front1_secondaries@highlight"
-						position = { x=417 y=0 }
-					}
-
-				}
 			}
 
 			################# MODULE SLOT: Custom, Middle #1 #################
@@ -588,29 +540,6 @@ guiTypes = {
 				}
 				containerWindowType = {
 					name = "ship_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_carrier_hull_mid_secondaries@highlight"
-						position = { x=100 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_carrier_hull_mid_secondaries"
-						position = { x=100 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
@@ -691,29 +620,6 @@ guiTypes = {
 				}
 				containerWindowType = {
 					name = "ship_secondaries@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "highlight"
-						spriteType = "GFX_SM_carrier_hull_mid_secondaries@highlight"
-						position = { x=65 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_dp_secondaries"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_SM_carrier_hull_mid_secondaries"
-						position = { x=65 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "ship_dp_secondaries@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					

@@ -49,6 +49,13 @@ equipments = {
 				}
 			}
 
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+			
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -56,46 +63,45 @@ equipments = {
 				}
 			}
 
-			engine_type_slot = {
+			armor_layout_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_engine_type
+					tank_armor_layout_type
 				}
 			}
 
-			special_type_slot_1 = {
+			radio_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+				}
+			}
+			
+			interior_slot = {
+				required = no
+				allowed_module_categories = {
+					tank_interior_module
 				}
 			}
 
-			special_type_slot_2 = {
+			optic_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
+					tank_optic_module
 				}
 			}
 
-			special_type_slot_3 = {
+			hull_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
+					tank_hull_module
 				}
 			}
 
-			special_type_slot_4 = {
+			turret_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
+					tank_turret_module
 				}
 			}
 			
@@ -134,7 +140,7 @@ equipments = {
 
 		module_count_limit = {
 			module = dozer_blade
-			count < 2
+			count < 1
 		}
 
 		module_count_limit = {
@@ -143,6 +149,14 @@ equipments = {
 		}
 		module_count_limit = {
 			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			module = smoke_launchers
 			count < 2
 		}
 		default_modules = {
@@ -308,6 +322,13 @@ equipments = {
 				}
 			}
 
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+			
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -315,46 +336,45 @@ equipments = {
 				}
 			}
 
-			engine_type_slot = {
+			armor_layout_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_engine_type
+					tank_armor_layout_type
 				}
 			}
 
-			special_type_slot_1 = {
+			radio_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_radio_module
-					tank_special_module
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
 				}
 			}
-
-			special_type_slot_3 = {
+			
+			interior_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
+					tank_interior_module
 				}
 			}
 
-			special_type_slot_4 = {
+			optic_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
+					tank_optic_module
+				}
+			}
+
+			hull_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_hull_module
+				}
+			}
+
+			turret_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_turret_module
 				}
 			}
 			
@@ -401,6 +421,14 @@ equipments = {
 		}
 		module_count_limit = {
 			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			module = smoke_launchers
 			count < 2
 		}
 		default_modules = {
@@ -623,6 +651,13 @@ equipments = {
 				}
 			}
 
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+			
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -630,46 +665,45 @@ equipments = {
 				}
 			}
 
-			engine_type_slot = {
+			armor_layout_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_engine_type
+					tank_armor_layout_type
 				}
 			}
 
-			special_type_slot_1 = {
+			radio_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
 					tank_radio_module
 				}
 			}
-
-			special_type_slot_3 = {
+			
+			interior_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
+					tank_interior_module
 				}
 			}
 
-			special_type_slot_4 = {
+			optic_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
+					tank_optic_module
+				}
+			}
+
+			hull_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_hull_module
+				}
+			}
+
+			turret_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_turret_module
 				}
 			}
 
@@ -715,6 +749,7 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
+		
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_heavy_two_man_tank_turret
@@ -895,50 +930,53 @@ equipments = {
 					tank_suspension_type
 				}
 			}
-
-			armor_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_armor_type
-				}
-			}
-
+			
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_engine_type
 				}
 			}
-
-			special_type_slot_1 = {
-				required = no
+			
+			armor_layout_type_slot = {
+				required = yes
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
+					tank_armor_layout_type
 				}
 			}
 
-			special_type_slot_2 = {
+			radio_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_radio_module
 				}
 			}
-
-			special_type_slot_3 = {
+			
+			interior_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
+					tank_interior_module
 				}
 			}
 
-			special_type_slot_4 = {
+			optic_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
+					tank_optic_module
+				}
+			}
+
+			hull_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_hull_module
+				}
+			}
+
+			turret_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_turret_module
 				}
 			}
 
@@ -984,7 +1022,14 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
