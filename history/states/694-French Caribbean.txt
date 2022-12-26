@@ -10,8 +10,8 @@ state={
 	}
 	
 	history={
-		add_core_of = GDL
 		owner = FRA
+		add_core_of = SEN
 		victory_points = {
 			9377 1
 		}

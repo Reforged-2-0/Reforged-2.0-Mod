@@ -6,14 +6,11 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = NGA
 		buildings = {
 			infrastructure = 1
 
 		}
-		
-		add_core_of = KEN
-		add_core_of = SOM
-
 	}
 
 	provinces={

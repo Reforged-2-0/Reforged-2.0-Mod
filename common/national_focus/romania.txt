@@ -2912,7 +2912,7 @@
 		}
 
 		completion_reward = {
-			add_ideas = ROM_local_development_2
+			add_ideas = ROM_local_development
 		}
 	}
 

@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = NGA
 		victory_points = {
 			10906 1
 		}

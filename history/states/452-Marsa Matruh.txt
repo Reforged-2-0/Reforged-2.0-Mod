@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = NGA
 		buildings = {
 			infrastructure = 3
 		}
@@ -20,7 +21,6 @@ state={
 			9989 1 #Sidi Barrani
 		}
 
-		add_core_of = EGY
 	}
 
 	provinces={

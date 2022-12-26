@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = NGA
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,7 +21,6 @@ state={
 			11976 1 
 		}
 
-		add_core_of = JOR
 	}
 
 	provinces={

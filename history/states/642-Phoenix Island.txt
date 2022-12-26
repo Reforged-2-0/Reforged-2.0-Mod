@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = USA
+		add_core_of = FSM
 		set_state_flag = USA_controls
 		buildings = {
 			infrastructure = 3

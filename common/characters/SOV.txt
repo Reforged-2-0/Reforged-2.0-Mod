@@ -1251,7 +1251,7 @@ characters={
 					}
 				}
 				traits  = {
-					air_chief_reform_3 
+					air_chief_reform_1
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -1294,7 +1294,7 @@ characters={
 					original_tag  = SOV
 				}
 				traits  = {
-					air_air_superiority_2 
+					air_bomber_interception_1
 				}
 				ai_will_do  = {
 					factor  = 1.000

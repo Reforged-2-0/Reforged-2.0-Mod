@@ -526,10 +526,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.3
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = @1939 }
+			position = { x = 2 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -548,11 +548,11 @@ technologies = {
 		}
 		
 		research_cost = 0.8
-		start_year = 1941
+		start_year = 1940
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 4 y = @1941 }
+			position = { x = 4 y = @1940 }
 		}
 		ai_will_do = {
 			factor = 4	
@@ -578,10 +578,10 @@ technologies = {
 		}
 		
 		research_cost = 1.2
-		start_year = 1941
+		start_year = 1940
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = @1941 }
+			position = { x = 2 y = @1940 }
 		}
 		
 		ai_will_do = {
@@ -610,10 +610,10 @@ technologies = {
 		}
 		
 		research_cost = 1.4
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = @1943 }
+			position = { x = 2 y = @1942 }
 		}
 		
 		ai_will_do = {
@@ -635,10 +635,10 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1945
+		start_year = 1944
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 2 y = @1944 }
 		}
 		
 		ai_will_do = {

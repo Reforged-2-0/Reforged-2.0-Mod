@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ITA
+		add_core_of = LBA
 		set_state_flag = GER_atlantikwall
 		
 		victory_points = {

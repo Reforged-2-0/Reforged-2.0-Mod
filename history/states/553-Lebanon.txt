@@ -12,6 +12,7 @@ state={
 	
 	history={
 		owner = FRA
+		add_core_of = SEN
 		victory_points = {
 			792 5 
 		}
@@ -23,7 +24,6 @@ state={
 			}
 		}
 
-		add_core_of = LEB
 	}
 
 	provinces={

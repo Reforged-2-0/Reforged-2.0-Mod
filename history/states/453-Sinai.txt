@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = NGA
 		set_state_flag = ENG_atlantikwall
 		buildings = {
 			infrastructure = 2
@@ -16,7 +17,6 @@ state={
 		victory_points = {
 			10099 1 
 		}
-		add_core_of = EGY
 
 	}
 

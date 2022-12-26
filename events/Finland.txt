@@ -315,6 +315,7 @@ country_event = {
 		name = finland.8.a
 	
 		white_peace = FIN
+		diplomatic_relation = { country = SOV relation = non_aggression_pact }
 		transfer_state = 146
 		transfer_state = 147
 		add_ideas = airandnavy_idea	

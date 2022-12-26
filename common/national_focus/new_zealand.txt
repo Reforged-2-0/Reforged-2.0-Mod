@@ -1176,7 +1176,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			add_ideas = FRA_air_dominance
+			add_ideas = AST_commonwealth_aircraft_corporation
 			add_doctrine_cost_reduction = {
                 name = air_doc_bonus
                 cost_reduction = 0.5

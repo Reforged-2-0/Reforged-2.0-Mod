@@ -1816,7 +1816,9 @@ war_measures = {
 		cost = GER_war_bonds_var?50
 
 		modifier = {
-			consumer_goods_factor = -0.04
+			consumer_goods_factor = -0.02
+			industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 		}
 
 		ai_will_do = {

@@ -12,6 +12,7 @@ state={
 	
 	history={
 		owner = FRA
+		add_core_of = SEN
 		victory_points = {
 			7069 10 
 		}

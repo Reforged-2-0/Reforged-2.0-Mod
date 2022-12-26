@@ -2056,31 +2056,10 @@ technology = construction4
 		complete_tooltip = {
 		    air_experience = 50
 		    add_ideas = GER_air_investments
-			random_state = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
 		    add_ideas = GER_air_investments
-			random_owned_controlled_state = {
-				prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 

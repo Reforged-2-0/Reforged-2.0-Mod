@@ -6,7 +6,7 @@ state={
 
 	history={
 		owner = NZL
-		add_core_of = SAM
+		add_core_of = FSM
 		buildings = {
 			infrastructure = 3
 			7290 = {

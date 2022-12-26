@@ -9,7 +9,7 @@ state={
 	history={
 		owner = LAT
 		victory_points = {
-			9340 5 
+			9340 20 #5 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -22,7 +22,7 @@ state={
 
 		}
 		add_core_of = LAT
-
+		add_core_of = SOV
 	}
 
 	provinces={

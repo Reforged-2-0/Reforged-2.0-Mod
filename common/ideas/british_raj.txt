@@ -2076,26 +2076,23 @@ ideas = {
 			picture = man_five_year_plan_air
 
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1
+				small_plane_airframe = {
+					build_cost_ic = -0.08
 					instant = yes
 				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.1
+				medium_plane_fighter_airframe = {
+					build_cost_ic = -0.08
 					instant = yes
 				}
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.08
 				}
-				tac_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.08
 				}
-				strat_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
+
 			}
 		}
 

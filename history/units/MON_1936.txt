@@ -130,6 +130,24 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = train_equipment_1
+			creator = "MON"
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "MON"
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
 			type = horse_equipment_0
 			creator = "MON" 
 		}

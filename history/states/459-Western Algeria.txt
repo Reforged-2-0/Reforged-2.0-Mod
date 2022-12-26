@@ -13,6 +13,7 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of = SEN
 		set_state_flag = GER_atlantikwall
 
 		victory_points = {

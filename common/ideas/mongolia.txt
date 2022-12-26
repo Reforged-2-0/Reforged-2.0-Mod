@@ -558,6 +558,198 @@ ideas = {
 		}
 	}
 	
+	tank_manufacturer = {
+
+		designer = yes
+
+		MON_kharkiv_diesel_factory = { ##main battle tank designer##
+
+			allowed = {
+				original_tag = MON
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				armor = -0.05
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.33 }
+			equipment_bonus = {
+				heavy_assault_gun_equipment = {
+					reliability = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+					build_cost_ic = 0.05
+				}
+				medium_tank_aa_chassis = {
+					reliability = -0.05
+					air_attack = 0.05
+					build_cost_ic = 0.05
+				}
+				medium_tank_destroyer_chassis = {
+					reliability = -0.05
+					hard_attack = 0.05
+					build_cost_ic = 0.05
+				}
+				medium_tank_artillery_chassis = {
+					reliability = -0.05
+					soft_attack = 0.05
+					build_cost_ic = 0.05
+				}
+				medium_tank_chassis = {
+					reliability = -0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+					build_cost_ic = 0.05
+				}
+			    light_tank_chassis = {
+					reliability = -0.05
+					soft_attack = 0.1
+					build_cost_ic = 0.05
+				}
+				light_tank_artillery_chassis = {
+					reliability = -0.05
+					soft_attack = 0.1
+					build_cost_ic = 0.05
+				}
+
+				light_tank_destroyer_chassis = {
+					reliability = -0.05
+					hard_attack = 0.1
+					build_cost_ic = 0.05
+				}
+				light_tank_aa_chassis = {
+					reliability = -0.05
+					air_attack = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+
+			traits = { SOV_medium_tank_designer }
+
+			modifier = {
+			}
+		}
+
+		MON_uralvagonzavod = { #tankograd
+			allowed = {
+				original_tag = MON
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				armor = -0.05
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.33 }
+			equipment_bonus = {
+				heavy_assault_gun_equipment = {
+					reliability = -0.1
+					armor_value = -0.05
+					build_cost_ic = -0.15
+				}
+				medium_tank_aa_chassis = {
+					reliability = -0.1
+					armor_value = -0.05
+					build_cost_ic = -0.15
+				}
+				medium_tank_artillery_chassis = {
+					reliability = -0.1
+					armor_value = -0.05
+					build_cost_ic = -0.15
+				}
+				medium_tank_destroyer_chassis = {
+					reliability = -0.1
+					armor_value = -0.05
+					build_cost_ic = -0.15
+				}
+				medium_tank_chassis = {
+					reliability = -0.1
+					armor_value = -0.05
+					build_cost_ic = -0.15
+				}
+			}
+
+			traits = { SOV_mass_production_facility }
+
+			modifier = {
+			}
+		}
+
+		MON_factory_no_174_k_e_voroshilov = { #Cavalry Tank Designer
+			allowed = {
+				original_tag = MON
+
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				armor = -0.05
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.33 }
+			equipment_bonus = {
+				heavy_assault_gun_equipment = {
+					reliability = -0.1
+					maximum_speed = 0.15
+					armor_value = -0.1
+					build_cost_ic = -0.05
+				}
+				medium_tank_aa_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.1
+					build_cost_ic = -0.05
+				}
+				medium_tank_artillery_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.10
+					build_cost_ic = -0.05
+				}
+				medium_tank_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.10
+					build_cost_ic = -0.05
+				}
+			    light_tank_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.1
+					build_cost_ic = -0.05
+				}
+				light_tank_artillery_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.1
+					build_cost_ic = -0.05
+				}
+
+				light_tank_destroyer_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.1
+					build_cost_ic = -0.05
+				}
+				light_tank_aa_chassis = {
+					reliability = -0.05
+					maximum_speed = 0.1
+					armor_value = -0.1
+					build_cost_ic = -0.05
+				}
+			}
+
+			traits = { SOV_cavalry_tank_designer }
+
+			modifier = {
+			}
+		}
+
+	}
 	
 	aircraft_manufacturer = {
 		
