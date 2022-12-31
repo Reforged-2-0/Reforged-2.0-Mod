@@ -1503,6 +1503,49 @@ ideas = {
 			}
 		}
 
+		USA_mark_14 = {
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_generic_the_london_naval_treaty
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_torpedo_hit_chance_factor = -0.20
+				naval_torpedo_reveal_chance_factor = 0.10
+				navy_submarine_attack_factor = -0.30
+				air_nav_efficiency = -0.15
+			}
+		}
+		
+		USA_mark_14_buord = {
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_the_long_lance
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_torpedo_hit_chance_factor = -0.10
+				naval_torpedo_reveal_chance_factor = 0.05
+				navy_submarine_attack_factor = -0.15
+				air_nav_efficiency = -0.075
+				
+			}
+		}
+		
 		office_of_strategic_services = {
 			allowed = {
 				always = no

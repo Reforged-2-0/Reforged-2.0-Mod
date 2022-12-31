@@ -51,6 +51,12 @@
  news.491.a:0 "Only the Fascists could resort to such barbaric warfare"
  news.491.b:0 "We gave them a chance to surrender"
  
+ news.492.t:0 "America bombs Tokyo!"
+ news.492.d:0 "American radio broadcast triumphantly today the actions taken by a squadron of bombers under the command of Lt. Colonel Jimmy Doolittle in the Pacific. A daring strike deep into the heart of Japanese territory saw the Nips capital city bombed for the first time in history, indeed this is being reported by many as the first time in history the Japanese mainland has been attacked by an outside enemy. This bombing will no doubt shock the Imperial high command coming after a string of crushing successes in their conquest of the South Pacific."
+ news.492.a:0 "Take that Tojo!"
+ news.492.b:0 "This is inexcusable!"
+ news.492.c:0 "The Americans are learning how to fight."
+ 
  usa.48.t:0 "Iceland, Greenland and the Faroe Islands"
  usa.48.d:0 "Germany has occupied Denmark and may be intentioned to take over the rest of Danish territories in the atlantic in order to use them as naval and air bases. We must avoid this scenario at all costs since our atlantic routes are already threatened as it is. We shall land and peacefully occupy the islands, the icelanders won't be happy but it's better us than the Germans for sure."
  usa.48.a:0 "Begin the Occupation"

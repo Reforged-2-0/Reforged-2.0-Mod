@@ -1147,6 +1147,27 @@ country_event = {
 		}	
 	}	
 }
+
+#Mark 14 Torpedos
+country_event = {
+	id = usa.76
+	title = usa.76.t
+	desc = usa.76.d
+	picture = GFX_report_event_usa_mark_14
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.76.a
+        add_timed_idea = {
+        	idea = USA_mark_14
+        	days = 400
+        }	
+	}	
+}
+
 # Britain accepts offer
 country_event = {
 	id = usa.401

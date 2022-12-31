@@ -16,4 +16,12 @@ spriteTypes = {
 		name = "GFX_news_event_guernica"
 		texturefile = "gfx/event_pictures/news_event_guernica.dds"
 	}
+	SpriteType = {
+		name = "GFX_report_event_usa_mark_14"
+		texturefile = "gfx/event_pictures/mark_14.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_doolittle_raid"
+		texturefile = "gfx/event_pictures/doolittle_raid.dds"
+	}
 }

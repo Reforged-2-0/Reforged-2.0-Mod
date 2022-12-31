@@ -1079,6 +1079,11 @@ characters={
 		}
 	}
 	frederic_irene_joliot_curie = {
+		portraits={
+			army={
+				small="GFX_idea_frederic_irene_joliot_curie"
+			}
+		}
 		advisor={
 			slot = theorist_research
 			idea_token = frederic_irene_joliot_curie
@@ -1096,6 +1101,11 @@ characters={
 		}
 	}
 	FRA_zivony_peshkov = {
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
 		advisor={
 			slot = theorist_production
 			idea_token = FRA_zivony_peshkov
@@ -1103,8 +1113,6 @@ characters={
 			allowed = {
 				original_tag = "FRA"
 			}
-			
-			picture = MEX_eduardo_hay
 			
 			traits = { war_industrialist }
 	
@@ -1121,6 +1129,11 @@ characters={
 	}
 
 	FRA_felix_gouin = {
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
 		advisor={
 			slot = theorist_production
 			idea_token = FRA_felix_goui
@@ -1128,8 +1141,6 @@ characters={
 			allowed = {
 				original_tag = "FRA"
 			}
-			
-			picture = CZE_gustav_husak
 			
 			traits = { captain_of_industry }
 	
@@ -1146,6 +1157,11 @@ characters={
 	}
 
 	FRA_felix_eboue = {
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
 		advisor={
 			slot = theorist_production
 			idea_token = FRA_felix_eboue
@@ -1153,8 +1169,6 @@ characters={
 			allowed = {
 				original_tag = "FRA"
 			}
-			
-			picture = FRA_FREE_felix_eboue
 
 			available = {
 				has_completed_focus = FRA_free_france

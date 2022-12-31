@@ -1548,7 +1548,54 @@ USA_unique_measures = {
 			}
 		}
 	}
+	
+	USA_fix_mark_14 = {
 
+		icon = oppression
+
+		available = {
+			NOT = {
+				has_country_flag = USA_victory_program_flag
+			}
+			has_completed_focus = USA_victory_program
+			has_idea = USA_mark_14
+		}
+
+		visible = {
+			always = yes
+			has_idea = USA_mark_14
+            NOT = { tag = SOV }			
+		}
+
+		fire_only_once = no
+
+		days_remove = 180
+		days_re_enable = 180
+
+		cost = 100
+
+		complete_effect = {
+			USA = { remove_ideas = USA_mark_14 }
+			set_country_flag = USA_victory_program_flag
+			add_timed_idea = {
+				idea = USA_mark_14_buord
+				days = 180
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = USA_victory_program_flag
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+	
 	USA_homeland_defense = {
 
 		icon = generic_prepare_civil_war
@@ -1583,6 +1630,62 @@ USA_unique_measures = {
 		}
 	}	
 
+	USA_doolittle_raid = {
+		icon = generic_operation
+		
+		allowed = {
+			tag = USA
+		}
+
+		available = {
+			ships_in_area = { area = 177 size < 50 }
+			ships_in_area = { area = 177 type = carrier size < 3 }
+		}
+		
+		activation = {
+			has_war_with = JAP
+			has_equipment = {
+				tac_bomber_equipment_1939 > 16
+			}
+			ships_in_area = { area = 177 size > 49 }
+			ships_in_area = { area = 177 type = carrier size > 1 }
+		}
+		is_good = yes
+		days_mission_timeout = 14
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		timeout_effect = {
+			news_event = { hours = 24 id = news.492 }
+			hidden_effect = {
+				ROOT = {
+					send_equipment = {
+						target = PAR
+						type = tac_bomber_equipment_1939
+						amount = 16
+					}
+				}
+				282 = { #Kanto
+					damage_building = { type = arms_factory damage = 0.2 }
+					damage_building = { type = industrial_complex damage = 0.2 }
+				}
+				set_global_flag = USA_doolittle_raid
+				JAP = {
+					add_stability = -0.05
+					add_war_support = -0.10
+				}
+			}
+		}
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = -0.10
+		}
+	}
+	
 	USA_torch = {
 		icon = generic_operation
 		

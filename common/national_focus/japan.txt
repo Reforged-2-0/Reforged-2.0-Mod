@@ -2395,7 +2395,7 @@ focus_tree = {
 		id = JAP_reach_for_resources_focus
 		icon = GFX_goal_oil
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
 
@@ -2429,12 +2429,44 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = JAP_operation_z
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		x = 1
+		y = 1
+		relative_position_id = JAP_strike_on_the_southern_resource_area
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 638 #Guam
+			has_full_control_of_state = 327 #Manila
+			has_full_control_of_state = 632 #Wake 
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = JAP_operation_z_idea
+		}
+	}
+	focus = {
 		id = JAP_betray_the_soviets
 		icon = GFX_focus_attack_soviet
-		prerequisite = { focus = JAP_reach_for_resources_focus }
+		prerequisite = { focus = JAP_reach_for_resources_focus	focus = JAP_operation_z }
 		x = 0
-		y = 1
-		relative_position_id = JAP_reach_for_resources_focus
+		y = 2
+		relative_position_id = JAP_strike_on_the_southern_resource_area
 
 		cost = 5
 

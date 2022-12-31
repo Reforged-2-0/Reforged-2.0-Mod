@@ -11,7 +11,9 @@ state={
 	}
 
 	history={
-		owner = IRQ
+		owner = ENG
+		add_core_of = IRQ
+		add_claim_by = KUR
 		victory_points = {
 			2097 10
 		}
@@ -31,8 +33,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = IRQ
-		add_claim_by = KUR
 	}
 
 	provinces={

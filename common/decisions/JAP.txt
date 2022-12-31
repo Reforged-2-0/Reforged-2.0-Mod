@@ -997,6 +997,52 @@ operations = {
 		}
 	}
 	
+	JAP_operation_mi = {
+		icon = generic_operation
+		
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			NOT = {
+				has_full_control_of_state = 650
+				has_full_control_of_state = 631
+				523 = {
+					controller = {
+						OR = {
+							tag = JAP
+							is_in_faction_with = JAP
+						}
+					} 
+					#JAP = { controls_state = 523 }
+				}
+			}
+		}
+		
+		activation = {
+			has_global_flag = USA_doolittle_raid
+		}
+		is_good = yes
+		days_mission_timeout = 90
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.10
+			
+		}
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = -0.10
+		}
+	}
+	
 	JAP_homeland_defense = {
 
 		icon = generic_prepare_civil_war

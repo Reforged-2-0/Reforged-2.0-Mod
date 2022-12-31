@@ -26,12 +26,12 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 3
-			12100 = {
-				naval_base = 3
-			}
-			9945 = {
-				naval_base = 3
-			}
+			#12100 = {
+			#	naval_base = 3
+			#}
+			#9945 = {
+			#	naval_base = 3
+			#}
 		}
 	}
 

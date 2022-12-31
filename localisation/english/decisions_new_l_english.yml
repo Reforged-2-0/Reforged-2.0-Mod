@@ -374,7 +374,11 @@
  USA_reinforce_monroe_doctrine_jap4:0 "Enforces South American embargo on Japan."
  USA_day_of_infamy:0 "A Date Which Will Live In Infamy"
  USA_day_of_infamy_desc:0 "All Americans will unite to avenge Pearl harbour!"
+ USA_fix_mark_14:0 "Investigate Torpedo Problems"
+ USA_fix_mark_14_desc:0 "Our submarines have been crippled by the Mark 14's failures and we cannot afford any more vessels lost if we are to win the war. We must discover how to fix our torpedoes if we are to turn the tide in the Pacific."
  USA_sealion_has_begun:0 "§YRequires that either§!:\nSealion has begun.\nContinental North America has been invaded."
+ USA_doolittle_raid:0 "Raid on Tokyo"
+ USA_doolittle_raid_desc:0 "We must strike at the heart of Japan, the way they have hit us. Never before in history has the Japanese mainland been attacked by a foriegn foe, never until now."
  ###ITA###
  ITA_reconquista:0 "Italian Reconquest"
  ITA_reconquista_desc:0 "Our country has been tarnished and divided since the allies have invaded. However, thanks to our resilience, we have manged to push the Allies back and finally retaken all of Italy. We can now heal as a nation and continue the war at full capacity."
@@ -425,7 +429,8 @@
  jap_second_truce:0 "Second ceasefire established"
  JAP_china_step_up_war_effort2:0 "Prepare To Win A Total Victory"
  JAP_china_step_up_war_effort2_desc:0 "Prime Minister Fumimaro Konoe has announced in a statement (aite ni sezu) that he and his cabinet would no longer deal with the nationalist government. They will now, instead, start negotiations with Wang Ching-wei involving the future of China."
- 
+ JAP_operation_mi:0 "Secure Pacific Defense Perimeter"
+ JAP_operation_mi_desc:0 "We can never again allow such a shameful disgrace to our nation again. We have determined the American attack to have originated from a carrier force operating East of the homeland. The Outer Defense Perimeter must be secured rapidly no matter the cost, we cannot allow the Emperor's life to be threatened in such a way ever again."
  
  ###ITA###
  ITA_declarewar:0 "Declare war on the Allies"

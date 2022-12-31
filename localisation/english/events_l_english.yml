@@ -982,6 +982,10 @@
  usa.75.d:0 "Air and naval forced of The Empire Japan have suddenly and deliberately attacked the USA! Pearl Harbour has been attacked by several waves of attack planes and as a result we have lost many battleships, however our carriers remain untouched since they were training at sea at the time of the attack."
  usa.75.a:0 "Day of Infamy!"
  
+ usa.76.t:0 "The Mark 14 Torpedo"
+ usa.76.d:0 "We are recieving numerous complaints from our forward submarine commanders operating off the Philippines regarding the performance of the newer Mark 14 torpedo models. Attacks on Japanese targerts have resulted in early detonations, late detonations, and a strong tendency not to detonate at all. The Bureau of Ordnance remains adament that the problem is human error, and that gung-ho sub commanders are ignoring the procedure to arm the magnetic detonators correctly. Furthermore they have threatened to court-martial any captain found tampering with their ships torpedo supply in an effort to remove or deactivate the detonators. This problem is not limited to our submarines however, as an air dropped version of the weapon is also employed by navy bombers. Until the debate over the problems of the Mark 14 is settled, the Silent Service and our air assets will be crippled."
+ usa.76.a:0 "This is a complete disaster!"
+ 
  news.1.t:0 "Marco Polo Bridge Incident"
  news.1.d:0 "Japanese and Chinese forces have skirmished inconclusively over the strategic Marco Polo Bridge located just southwest of Beijing. \n\n[CHI.GetNameDef] has rejected [JAP.GetNameDef]'s demands for an apology and territorial concessions, claiming instead that the 'breaking point' of Japanese aggression has been reached. \n\nDiplomats fear that the volatile situation could result in war at any time."
  news.1.a:1 "Interesting times indeed."

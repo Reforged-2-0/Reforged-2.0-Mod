@@ -1234,6 +1234,11 @@ characters={
 		}
 	}
 	eng_stewart_menzies = {
+		portraits={
+			army={
+				small="GFX_idea_eng_stewart_menzies"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = eng_stewart_menzies
@@ -1251,11 +1256,15 @@ characters={
 		}	
 	}
 	ENG_lord_halifax = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_7"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_lord_halifax
-			picture = advisor_generic_11				
-
+			
 			allowed = {
 				original_tag = ENG
 			}
@@ -1272,11 +1281,15 @@ characters={
 		}
 	}
 	ENG_sir_john_simon = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_13"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_sir_john_simon
-			picture = advisor_generic_13	
-
+			
 			allowed = {
 				original_tag = ENG
 			}
@@ -1293,10 +1306,14 @@ characters={
 		}
 	}
 	ENG_sir_samuel_hoare = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_17"
+			}
+		}
 		advisor={
 			slot = political_advisor
-			idea_token = ENG_sir_samuel_hoare
-			picture = advisor_generic_17	
+			idea_token = ENG_sir_samuel_hoare	
 
 			allowed = {
 				original_tag = ENG
@@ -1317,10 +1334,14 @@ characters={
 		}
 	}
 	ENG_anthony_eden = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_4"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_anthony_eden
-			picture = advisor_generic_4	
 
 			allowed = {
 				original_tag = ENG
@@ -1343,10 +1364,14 @@ characters={
 		}
 	}
 	ENG_william_ormsby_gore = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_20"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_william_ormsby_gore
-			picture = advisor_generic_20
 
 			allowed = {
 				original_tag = ENG
@@ -1411,10 +1436,14 @@ characters={
 		}	
 	}
 	ENG_lord_swinton = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_35"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_lord_swinton
-			picture = advisor_generic_35
 			
 			allowed = {
 				original_tag = ENG
@@ -1434,10 +1463,14 @@ characters={
 		}
 	}
 	ENG_duff_cooper = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_15"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_duff_cooper
-			picture = advisor_generic_15
 			
 			allowed = {
 				original_tag = ENG
@@ -1457,10 +1490,14 @@ characters={
 		}
 	}
 	ENG_oliver_stanley = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_16"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_oliver_stanley
-			picture = advisor_generic_16
 			
 			allowed = {
 				original_tag = ENG
@@ -1483,10 +1520,14 @@ characters={
 		}
 	}
 	ENG_ernest_brown = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_29"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_ernest_brown
-			picture = advisor_generic_29
 
 			allowed = {
 				original_tag = ENG 
@@ -1504,10 +1545,14 @@ characters={
 		} 
 	}
     ENG_ernest_bevin = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_3"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token =  ENG_ernest_bevin
-			picture = generic_political_advisor_europe_3
 			
 			allowed = {
 				original_tag = ENG
@@ -1742,6 +1787,11 @@ characters={
 		}
 	}
 	james_chadwick = {
+		portraits={
+			army={
+				small="GFX_idea_james_chadwick"
+			}
+		}
 		advisor={
 			slot = theorist_research
 			idea_token = james_chadwick	
@@ -1759,6 +1809,11 @@ characters={
 		}
 	}	
 	frank_whittle = {
+		portraits={
+			army={
+				small="GFX_idea_frank_whittle"
+			}
+		}
 		advisor={
 			slot = theorist_research
 			idea_token = frank_whittle
@@ -1776,10 +1831,14 @@ characters={
 		}
 	}
 	ENG_maxwell_aitken = {
+		portraits={
+			army={
+				small="GFX_idea_ENG_maxwell_aitken"
+			}
+		}
 		advisor={
 			slot = theorist_production
 			idea_token = ENG_maxwell_aitken
-			picture = generic_political_advisor_europe_1
 			
 			allowed  = {
 			    OR = {
@@ -1792,10 +1851,14 @@ characters={
 		}
 	}
 	ENG_leslie_hore_belisha = {
+		portraits={
+			army={
+				small="GFX_idea_ENG_leslie_hore_belisha"
+			}
+		}
 		advisor={
 			slot = theorist_production
 			idea_token = ENG_leslie_hore_belisha
-			picture = generic_political_advisor_europe_2
 			
 			allowed = {
 				original_tag = ENG
@@ -1805,10 +1868,14 @@ characters={
 		}
 	}
 	ENG_frederick_marquis = {
+		portraits={
+			army={
+				small="GFX_idea_advisor_generic_14"
+			}
+		}
 		advisor={
 			slot = theorist_production
 			idea_token = ENG_frederick_marquis
-			picture = generic_political_advisor_europe_4
 			
 			allowed = {
 				original_tag = ENG

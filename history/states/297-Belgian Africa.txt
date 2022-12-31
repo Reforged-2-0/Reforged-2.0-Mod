@@ -15,12 +15,12 @@ state=
 		}
 		buildings = {
 			infrastructure = 2
-			1903 = {
-				naval_base = 1
-			}
-			8244 = {
-				naval_base = 1
-			}
+			#1903 = {
+			#	naval_base = 1
+			#}
+			#8244 = {
+			#	naval_base = 1
+			#}
 		}
 	}
 	provinces=
