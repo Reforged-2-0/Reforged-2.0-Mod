@@ -15,6 +15,7 @@ state={
 
 	history={
 		owner = RAJ
+		set_state_flag = USA_controls_air
 		victory_points = {
 			12299 10
 		}

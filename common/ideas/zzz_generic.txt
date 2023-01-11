@@ -1155,37 +1155,8 @@ ideas = {
 
 			removal_cost = -1
 			
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0 instant = yes
-				}		
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = 0 instant = yes
-				}
+			modifier = {
+				local_resources_factor = 0.0
 			}
 		}
 		allies_air_production_malus_2 = {
@@ -1201,37 +1172,8 @@ ideas = {
 
 			removal_cost = -1
 
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}		
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = 0.02 instant = yes
-				}
+			modifier = {
+				local_resources_factor = -0.04
 			}
 		}
 		allies_air_production_malus_3 = {
@@ -1247,37 +1189,8 @@ ideas = {
 
 			removal_cost = -1
 
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}		
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = 0.04 instant = yes
-				}
+			modifier = {
+				local_resources_factor = -0.08
 			}
 		}
 		allies_air_production_malus_4 = {
@@ -1293,37 +1206,8 @@ ideas = {
 
 			removal_cost = -1
 
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}		
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = 0.08 instant = yes
-				}
+			modifier = {
+				local_resources_factor = -0.12
 			}
 		}
 		allies_air_production_malus_5 = {
@@ -1339,37 +1223,8 @@ ideas = {
 
 			removal_cost = -1
 
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}		
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = 0.12 instant = yes
-				}
+			modifier = {
+				local_resources_factor = -0.16
 			}
 		}
 		allies_air_production_malus_6 = {
@@ -1385,37 +1240,8 @@ ideas = {
 
 			removal_cost = -1
 
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}		
-				medium_plane_fighter_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = 0.16 instant = yes
-				}
+			modifier = {
+				local_resources_factor = -0.20
 			}
 		}
 		
