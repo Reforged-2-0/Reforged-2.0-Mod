@@ -53,10 +53,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/icon_privacy.dds"
 	}
 	spriteType = {
-		name = "GFX_oak_logo"
-		texturefile = "gfx/interface/logo_oak.dds"
-	}
-	spriteType = {
 		name = "GFX_socialview_icon"
 		texturefile = "gfx/interface/icons/pi_icon.dds"
 	}

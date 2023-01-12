@@ -79,11 +79,6 @@ guiTypes = {
 			spriteType = "GFX_pdx_int_logo"
 			position = { x= 135 y = 15 }
 		}
-		iconType = {
-			name ="oak_logo"
-			spriteType = "GFX_oak_logo"
-			position = { x= 110 y = 930 }
-		}
 	}		
 
 	### SINGLE PLAYER MENU
